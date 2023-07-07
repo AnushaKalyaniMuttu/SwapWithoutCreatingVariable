@@ -1,0 +1,18 @@
+package com.bean;
+
+public class Test {
+    
+
+		    public static void main(String[] args) {
+		    	String s1="abc";
+		    	String s2="pqrs";    	
+		    	s1=s1.concat(s2); //abcpqrs     7
+		    	s2=s1.substring(0,s1.length()-s2.length());//abc  //pqrs       4
+		    	s1=s1.replace(s1.substring(0,s2.length()),"");//prqs
+		    	System.out.println(s1);
+		    	System.out.println(s2);
+		    	
+		    }
+	
+	
+}
